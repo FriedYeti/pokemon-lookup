@@ -36,7 +36,7 @@ window.onload = function() {
 }
 
 async function searchForInput() {
-	let searchResults = await pokewrap.getPokemon(document.getElementById('search-term').value);
+	let searchResults = await pokewrap.getPokemon(document.getElementById('search-term').value.toLowerCase());
 	displayPokemonData(searchResults);
 }
 
