@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pokemon Lookup</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+  </head>
+  <body>
+	  <div id="content-area">
+		  <div id="title-area">
+			  Pokemon Lookup
+		  </div>
+	  	<div id="header">
+	  		<input type="text" id="search-term">
+	  		<button type="button" id="search">Search</button>
+			<div id="favorite-stuff">
+	  	      		<label for="favorites">Favorites:</label>
+	  	      		<select id="favorites">
+	  	      		</select>
+	  	      		<button type="button" id="load-favorite">Load Favorite</button>
+			</div>
+	  	</div>
+	  	<div class="row-flex">
+	  	        <div class="column-flex">
+	  	      	  <div id="pokemon-name" class="capitalize"></div>
+	  	      	  <div id="pokemon-types" class="capitalize"></div>
+	  	      	  <div id="pokemon-abilities" class="capitalize"></div>
+	  	      	  <button type="button" id="add-fav">Add to Favorites</button>
+	  	      	  <button type="button" id="rem-fav">Remove from Favorites</button>
+	  	        </div>
+			<table>
+				<tr>
+					<td>
+	  	        			<img id="pokemon-sprite-front" class="zoom"></img>
+	  	        			<img id="pokemon-sprite-back" class="zoom"></img>
+					</td>
+					<td>
+	  	        			<img id="pokemon-sprite-front-female" class="zoom"></img>
+	  	        			<img id="pokemon-sprite-back-female" class="zoom"></img>
+					</td>
+					<td>
+	  	        			<img id="pokemon-sprite-front-shiny" class="zoom"></img>
+	  	        			<img id="pokemon-sprite-back-shiny" class="zoom"></img>
+					</td>
+					<td>
+	  	        			<img id="pokemon-sprite-front-female-shiny" class="zoom"></img>
+	  	        			<img id="pokemon-sprite-back-female-shiny" class="zoom"></img>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Default
+					</td>
+					<td>
+						Female
+					</td>
+					<td>
+						Shiny
+					</td>
+					<td>
+						Shiny Female
+					</td>
+				</tr>
+			</table>
+	  	</div>
+		<div id="note-stuff">
+	  		<input type="text" id="note-input"></input>
+	  		<button type="button" id="add-note">Add Note</button>
+	  		<div id="notes"></div>
+		</div>
+	  </div>
+
+	  <div id="json-data"></div>
+	  <script src="scripts/pokewrap.js"></script>
+	  <script src="scripts/main.js"></script>
+  </body>
+</html>
+

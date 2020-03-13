@@ -1,0 +1,125 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: auto;
+    background-color: firebrick;
+}
+
+#content-area {
+    width: 900px;
+    height: 100%;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+#favorite-stuff {
+    float: right;
+}
+
+#header {
+    padding: 15px 30px 30px 30px;
+}
+
+td {
+    max-width: 100px;
+    align-content: center;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #333;
+    max-height: 300px;
+}
+
+table {
+    padding: 0px 20px 0px 20px;
+}
+
+img {
+    margin: auto;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#title-area {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    border: medium black solid;
+}
+
+#pokemon-name {
+    font-size: 30px;
+}
+
+#pokemon-types {
+    font-size: 20px;
+}
+
+#pokemon-abilities {
+    font-size: 12px;
+}
+
+.zoom {
+    background-color: aliceblue;
+    image-rendering: crisp-edges;
+}
+
+.zoom:hover {
+    transition: 0.2s;
+    outline: medium solid black;
+    transform: scale(2);
+    image-rendering: crisp-edges;
+}
+
+pre {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    background-color: aliceblue;
+    border: medium solid black;
+}
+
+#note-stuff {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+#note-input {
+/*     margin: 0px 0px 30px 20px; */
+    margin: auto;
+    width: 85%
+}
+
+#add-note {
+    margin:auto;
+    width: 10%
+}
+
+#notes {
+    text-align: left;
+    padding: 5px 20px 0px 20px;
+}
+
+.displayed-note {
+    border: medium black solid;
+    min-height: 20px;
+}
+
+.note-deleter {
+    float: right;
+}
